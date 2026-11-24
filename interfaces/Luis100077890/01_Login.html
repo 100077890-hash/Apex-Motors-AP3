@@ -1,0 +1,130 @@
+<ion-content [fullscreen]="true" class="login-content">
+
+  <main class="page-wrapper">
+
+    <!-- LOGO Y NOMBRE -->
+    <header class="brand-header">
+      <div class="brand-symbol">AM</div>
+
+      <div class="brand-name">
+        <span>APEX</span>
+        <span>MOTORS</span>
+      </div>
+
+      <p class="brand-tagline">
+        PREMIUM AUTOMOTIVE
+      </p>
+    </header>
+
+    <!-- BIENVENIDA -->
+    <section class="welcome-section">
+      <p class="eyebrow">CONDUCE LA EXCELENCIA</p>
+
+      <h1>
+        Tu próximo vehículo
+        <span>te está esperando.</span>
+      </h1>
+
+      <p class="welcome-description">
+        Descubre una experiencia exclusiva
+        en vehículos deportivos y de lujo.
+      </p>
+    </section>
+
+    <!-- MARCAS DE VEHÍCULOS -->
+    <section class="brand-logos" aria-label="Marcas de vehículos">
+
+      <img
+        src="https://cdn.simpleicons.org/porsche/FFFFFF"
+        alt="Porsche"
+        class="logo-porsche">
+
+      <img
+        src="https://cdn.simpleicons.org/bmw/FFFFFF"
+        alt="BMW"
+        class="logo-bmw">
+
+      <img
+        src="https://cdn.simpleicons.org/ferrari/FFFFFF"
+        alt="Ferrari"
+        class="logo-ferrari">
+
+      <img
+        src="https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-Benz_Star.svg"
+        alt="Mercedes-Benz"
+        class="logo-mercedes">
+
+    </section>
+
+    <!-- TARJETA DE INICIO DE SESIÓN -->
+    <ion-card class="login-card">
+
+      <ion-card-header>
+        <ion-card-subtitle>
+          BIENVENIDO DE NUEVO
+        </ion-card-subtitle>
+
+        <ion-card-title>
+          Inicia sesión
+        </ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+
+        <p class="form-description">
+          Ingresa tus datos para continuar.
+        </p>
+
+        <!-- CAMPOS DE ACCESO -->
+        <ion-list lines="none" class="login-list">
+
+          <ion-item class="login-item">
+            <ion-input
+              label="Correo electrónico"
+              label-placement="stacked"
+              type="email"
+              placeholder="nombre@correo.com">
+            </ion-input>
+          </ion-item>
+
+          <ion-item class="login-item">
+            <ion-input
+              label="Contraseña"
+              label-placement="stacked"
+              type="password"
+              placeholder="Ingresa tu contraseña">
+            </ion-input>
+          </ion-item>
+
+        </ion-list>
+
+        <div class="forgot-password">
+          ¿Olvidaste tu contraseña?
+        </div>
+
+        <!-- BOTÓN DE ACCESO -->
+        <ion-button
+          expand="block"
+          class="login-button"
+          [routerLink]="['/catalogo']">
+          INICIAR SESIÓN
+        </ion-button>
+
+        <p class="register-text">
+          ¿No tienes una cuenta?
+          <strong>Regístrate</strong>
+        </p>
+
+      </ion-card-content>
+    </ion-card>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="page-footer">
+      APEX MOTORS © 2026
+      <br>
+      ELEGANCIA · POTENCIA · EXCLUSIVIDAD
+    </footer>
+
+  </main>
+
+</ion-content>
