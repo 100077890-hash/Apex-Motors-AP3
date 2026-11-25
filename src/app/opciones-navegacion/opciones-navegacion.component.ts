@@ -1,5 +1,14 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { addIcons } from 'ionicons';
+
+import {
+  homeOutline,
+  carSportOutline,
+  personOutline,
+  settingsOutline
+} from 'ionicons/icons';
 
 import {
   IonList,
@@ -14,6 +23,7 @@ import {
   styleUrls: ['./opciones-navegacion.component.scss'],
   standalone: true,
   imports: [
+    CommonModule,
     RouterLink,
     IonList,
     IonItem,
@@ -33,7 +43,25 @@ export class OpcionesNavegacionComponent {
       titulo: 'Catálogo de vehículos',
       icono: 'car-sport-outline',
       ruta: '/catalogo'
+    },
+    {
+      titulo: 'Perfil',
+      icono: 'person-outline',
+      ruta: '/perfil'
+    },
+    {
+      titulo: 'Configuración',
+      icono: 'settings-outline',
+      ruta: '/configuracion'
     }
   ];
 
+  constructor() {
+    addIcons({
+      homeOutline,
+      carSportOutline,
+      personOutline,
+      settingsOutline
+    });
+  }
 }
