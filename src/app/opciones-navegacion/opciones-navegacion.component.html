@@ -1,0 +1,35 @@
+<ion-list class="navigation-list">
+
+  <ion-item
+
+    *ngFor="let opcion of opciones"
+
+    [routerLink]="opcion.ruta"
+
+    routerDirection="root"
+
+    button
+
+    detail="true"
+
+    lines="none"
+
+    class="navigation-item">
+
+    <ion-icon
+
+      [name]="opcion.icono"
+
+      slot="start">
+
+    </ion-icon>
+
+    <ion-label>
+
+      {{ opcion.titulo }}
+
+    </ion-label>
+
+  </ion-item>
+
+</ion-list>
