@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 
 import {
@@ -13,7 +12,8 @@ import {
   IonCardContent,
   IonList,
   IonItem,
-  IonButton
+  IonButton,
+  IonMenuToggle
 } from '@ionic/angular';
 
 @Component({
@@ -32,7 +32,8 @@ import {
     IonCardContent,
     IonList,
     IonItem,
-    IonButton
+    IonButton,
+    IonMenuToggle
   ],
 })
 export class CatalogoPage {

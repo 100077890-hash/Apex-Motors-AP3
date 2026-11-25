@@ -1,0 +1,203 @@
+.profile-header ion-toolbar {
+  --background: #111111;
+  --color: #ffffff;
+  --border-color: #292929;
+}
+
+.profile-header ion-title {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.profile-header ion-back-button {
+  --color: #e5b94f;
+}
+
+.profile-content {
+  --background: #101010;
+  --color: #ffffff;
+}
+
+.profile-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 24px 18px;
+}
+
+.profile-intro {
+  margin: 10px 0 28px;
+}
+
+.eyebrow,
+.section-label {
+  color: #e5b94f;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+}
+
+.profile-intro h1 {
+  color: #ffffff;
+  font-size: 29px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.profile-intro p:last-child {
+  color: #a5a5a5;
+  font-size: 13px;
+}
+
+.profile-card {
+  background: linear-gradient(145deg, #242424, #151515);
+  border: 1px solid #393939;
+  border-radius: 18px;
+  padding: 30px 18px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.avatar {
+  width: 88px;
+  height: 88px;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #e5b94f;
+  border-radius: 50%;
+  background: #111111;
+  color: #e5b94f;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.profile-card h2 {
+  color: #ffffff;
+  font-size: 20px;
+  margin: 8px 0;
+}
+
+.profile-card > p {
+  color: #999999;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+}
+
+.member-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #e5b94f;
+  background: #302a1b;
+  padding: 8px 13px;
+  border-radius: 20px;
+  font-size: 11px;
+  margin-top: 12px;
+}
+
+.information-section,
+.account-section {
+  margin-bottom: 27px;
+}
+
+.section-label {
+  margin-bottom: 13px;
+}
+
+.information-card,
+.account-card {
+  margin: 0;
+  background: #1b1b1b;
+  border: 1px solid #303030;
+  border-radius: 14px;
+  box-shadow: none;
+}
+
+.information-card ion-card-content {
+  padding: 8px;
+}
+
+.information-card ion-list {
+  background: transparent;
+}
+
+.information-card ion-item {
+  --background: transparent;
+  --color: #ffffff;
+  --border-color: #333333;
+  --padding-start: 10px;
+  --inner-padding-end: 8px;
+  --min-height: 72px;
+}
+
+.information-card ion-item ion-icon {
+  color: #e5b94f;
+  font-size: 21px;
+  margin-right: 13px;
+}
+
+.information-card ion-label span {
+  display: block;
+  color: #999999;
+  font-size: 11px;
+  margin-bottom: 5px;
+}
+
+.information-card ion-label h3 {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.account-card ion-card-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 18px;
+}
+
+.experience-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #302a1b;
+  border-radius: 12px;
+}
+
+.experience-icon ion-icon {
+  color: #e5b94f;
+  font-size: 25px;
+}
+
+.account-card h3 {
+  color: #ffffff;
+  font-size: 14px;
+  margin: 0 0 7px;
+}
+
+.account-card p {
+  color: #aaaaaa;
+  font-size: 11px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.profile-footer {
+  color: #888888;
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: 1px;
+  padding: 20px 0;
+}
+
+.profile-footer p {
+  color: #e5b94f;
+  font-size: 9px;
+  margin-top: 7px;
+}
