@@ -1,0 +1,44 @@
+
+.contenedor-imagen {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  touch-action: none;
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 230px;
+}
+
+.contenedor-imagen img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  transition: transform 0.1s ease-out;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.info-contextual {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  right: 12px;
+  background: rgba(20, 20, 20, 0.92);
+  color: white;
+  padding: 16px;
+  border-radius: 12px;
+  text-align: center;
+  z-index: 10;
+}
+
+.info-contextual strong {
+  font-size: 18px;
+  color: #ffc409;
+}
+
+.info-contextual p {
+  font-size: 14px;
+  margin: 8px 0;
+}
