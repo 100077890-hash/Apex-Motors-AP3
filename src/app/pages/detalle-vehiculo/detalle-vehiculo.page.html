@@ -1,0 +1,150 @@
+<ion-header class="detail-header">
+  <ion-toolbar>
+    <div class="header-brand">
+      <div class="brand-symbol">AM</div>
+      <div class="brand-text">
+        <strong>APEX MOTORS</strong>
+        <small>PREMIUM AUTOMOTIVE</small>
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="detail-content">
+
+  <main class="detail-wrapper">
+
+    <section class="detail-intro">
+      <p class="eyebrow">EXCLUSIVIDAD SOBRE RUEDAS</p>
+      <h1>Detalles del vehículo</h1>
+      <p>Descubre cada detalle de nuestra selección premium.</p>
+    </section>
+
+    <section class="vehicle-image-section">
+
+      <div
+        class="contenedor-imagen"
+        (touchstart)="iniciarGestos($event)"
+        (touchmove)="moverGestos($event)"
+        (touchend)="finalizarGestos()"
+        (touchcancel)="finalizarGestos()"
+      >
+        <img
+          src="https://commons.wikimedia.org/wiki/Special:FilePath/M4_Comp.jpg"
+          alt="BMW M4 Competition"
+          [style.transform]="'scale(' + escala + ')'"
+          draggable="false"
+        />
+
+        <div class="image-label">BMW M SERIES</div>
+
+        <div class="info-contextual" *ngIf="mostrarInfo">
+          <strong>BMW M4 Competition</strong>
+          <p>Motor deportivo de alto rendimiento.</p>
+          <p>Potencia y elegancia en un solo vehículo.</p>
+
+          <ion-button
+            color="warning"
+            size="small"
+            (click)="cerrarInfo()"
+          >
+            Cerrar información
+          </ion-button>
+        </div>
+      </div>
+
+      <p class="gesture-hint">
+        Pellizca para ampliar · Mantén presionada la imagen para más información
+      </p>
+
+    </section>
+
+    <section class="vehicle-heading">
+      <div>
+        <p class="vehicle-category">DEPORTIVO PREMIUM</p>
+        <h2>BMW M4 Competition</h2>
+        <p class="vehicle-description">
+          Ingeniería alemana, potencia y diseño extraordinario.
+        </p>
+      </div>
+
+      <div class="vehicle-price">
+        <small>PRECIO</small>
+        <strong>US$85,000</strong>
+      </div>
+    </section>
+
+    <section class="specifications-section">
+      <div class="section-heading">
+        <span>01</span>
+        <h3>Especificaciones</h3>
+      </div>
+
+      <div class="specifications-grid">
+
+        <article class="spec-card">
+          <ion-icon name="calendar-outline"></ion-icon>
+          <small>AÑO</small>
+          <strong>2026</strong>
+        </article>
+
+        <article class="spec-card">
+          <ion-icon name="settings-outline"></ion-icon>
+          <small>TRANSMISIÓN</small>
+          <strong>Automática</strong>
+        </article>
+
+        <article class="spec-card">
+          <ion-icon name="water-outline"></ion-icon>
+          <small>COMBUSTIBLE</small>
+          <strong>Gasolina</strong>
+        </article>
+
+        <article class="spec-card">
+          <ion-icon name="speedometer-outline"></ion-icon>
+          <small>CATEGORÍA</small>
+          <strong>Deportivo</strong>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="benefits-section">
+      <div class="section-heading">
+        <span>02</span>
+        <h3>Beneficios incluidos</h3>
+      </div>
+
+      <div class="benefit-item">
+        <ion-icon name="cash-outline"></ion-icon>
+        <div>
+          <strong>Financiamiento disponible</strong>
+          <p>Consulta nuestras opciones de financiamiento.</p>
+        </div>
+      </div>
+
+      <div class="benefit-item">
+        <ion-icon name="shield-checkmark-outline"></ion-icon>
+        <div>
+          <strong>Garantía incluida</strong>
+          <p>Mayor tranquilidad en tu compra.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="quotation-section">
+      <p>¿Listo para conducir la excelencia?</p>
+
+      <ion-button
+        expand="block"
+        class="quotation-button"
+        (click)="cotizarVehiculo()"
+      >
+        SOLICITAR COTIZACIÓN
+        <ion-icon name="car-sport-outline" slot="end"></ion-icon>
+      </ion-button>
+    </section>
+
+  </main>
+
+</ion-content>
