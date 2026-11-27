@@ -1,88 +1,150 @@
-
-<ion-header>
-  <ion-toolbar color="dark">
-    <ion-title>Apex Motors</ion-title>
+<ion-header class="detail-header">
+  <ion-toolbar>
+    <div class="header-brand">
+      <div class="brand-symbol">AM</div>
+      <div class="brand-text">
+        <strong>APEX MOTORS</strong>
+        <small>PREMIUM AUTOMOTIVE</small>
+      </div>
+    </div>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content [fullscreen]="true" class="detail-content">
 
-  <ion-card>
+  <main class="detail-wrapper">
 
-    <!-- Imagen con gestos Pinch/Zoom y Long-Press -->
-    <div
-      class="contenedor-imagen"
-      (touchstart)="iniciarGestos($event)"
-      (touchmove)="moverGestos($event)"
-      (touchend)="finalizarGestos()"
-      (touchcancel)="finalizarGestos()"
-    >
+    <section class="detail-intro">
+      <p class="eyebrow">EXCLUSIVIDAD SOBRE RUEDAS</p>
+      <h1>Detalles del vehículo</h1>
+      <p>Descubre cada detalle de nuestra selección premium.</p>
+    </section>
 
-      <img
-        src="https://commons.wikimedia.org/wiki/Special:FilePath/M4_Comp.jpg"
-        alt="BMW M4 Competition"
-        [style.transform]="'scale(' + escala + ')'"
-        draggable="false"
-      />
+    <section class="vehicle-image-section">
 
-      <!-- Información contextual -->
-      <div class="info-contextual" *ngIf="mostrarInfo">
+      <div
+        class="contenedor-imagen"
+        (touchstart)="iniciarGestos($event)"
+        (touchmove)="moverGestos($event)"
+        (touchend)="finalizarGestos()"
+        (touchcancel)="finalizarGestos()"
+      >
+        <img
+          src="https://commons.wikimedia.org/wiki/Special:FilePath/M4_Comp.jpg"
+          alt="BMW M4 Competition"
+          [style.transform]="'scale(' + escala + ')'"
+          draggable="false"
+        />
 
-        <strong>BMW M4 Competition</strong>
+        <div class="image-label">BMW M SERIES</div>
 
-        <p>Motor deportivo de alto rendimiento.</p>
+        <div class="info-contextual" *ngIf="mostrarInfo">
+          <strong>BMW M4 Competition</strong>
+          <p>Motor deportivo de alto rendimiento.</p>
+          <p>Potencia y elegancia en un solo vehículo.</p>
 
-        <p>Potencia y elegancia en un solo vehículo.</p>
-
-        <ion-button
-          color="warning"
-          size="small"
-          (click)="cerrarInfo()"
-        >
-          Cerrar información
-        </ion-button>
-
+          <ion-button
+            color="warning"
+            size="small"
+            (click)="cerrarInfo()"
+          >
+            Cerrar información
+          </ion-button>
+        </div>
       </div>
 
-    </div>
+      <p class="gesture-hint">
+        Pellizca para ampliar · Mantén presionada la imagen para más información
+      </p>
 
-    <ion-card-header>
-      <ion-card-title>
-        BMW M4 Competition
-      </ion-card-title>
+    </section>
 
-      <ion-card-subtitle>
-        Vehículo Deportivo Premium
-      </ion-card-subtitle>
-    </ion-card-header>
+    <section class="vehicle-heading">
+      <div>
+        <p class="vehicle-category">DEPORTIVO PREMIUM</p>
+        <h2>BMW M4 Competition</h2>
+        <p class="vehicle-description">
+          Ingeniería alemana, potencia y diseño extraordinario.
+        </p>
+      </div>
 
-    <ion-card-content>
+      <div class="vehicle-price">
+        <small>PRECIO</small>
+        <strong>US$85,000</strong>
+      </div>
+    </section>
 
-      <p><strong>Precio:</strong> US$85,000</p>
-      <p><strong>Año:</strong> 2026</p>
-      <p><strong>Transmisión:</strong> Automática</p>
-      <p><strong>Combustible:</strong> Gasolina</p>
+    <section class="specifications-section">
+      <div class="section-heading">
+        <span>01</span>
+        <h3>Especificaciones</h3>
+      </div>
 
-    </ion-card-content>
+      <div class="specifications-grid">
 
-  </ion-card>
+        <article class="spec-card">
+          <ion-icon name="calendar-outline"></ion-icon>
+          <small>AÑO</small>
+          <strong>2026</strong>
+        </article>
 
-  <ion-list>
+        <article class="spec-card">
+          <ion-icon name="settings-outline"></ion-icon>
+          <small>TRANSMISIÓN</small>
+          <strong>Automática</strong>
+        </article>
 
-    <ion-item>
-      <ion-label>Financiamiento disponible</ion-label>
-    </ion-item>
+        <article class="spec-card">
+          <ion-icon name="water-outline"></ion-icon>
+          <small>COMBUSTIBLE</small>
+          <strong>Gasolina</strong>
+        </article>
 
-    <ion-item>
-      <ion-label>Garantía incluida</ion-label>
-    </ion-item>
+        <article class="spec-card">
+          <ion-icon name="speedometer-outline"></ion-icon>
+          <small>CATEGORÍA</small>
+          <strong>Deportivo</strong>
+        </article>
 
-  </ion-list>
+      </div>
+    </section>
 
-  <ion-fab vertical="bottom" horizontal="end">
-    <ion-fab-button color="warning">
-      Cotizar
-    </ion-fab-button>
-  </ion-fab>
+    <section class="benefits-section">
+      <div class="section-heading">
+        <span>02</span>
+        <h3>Beneficios incluidos</h3>
+      </div>
+
+      <div class="benefit-item">
+        <ion-icon name="cash-outline"></ion-icon>
+        <div>
+          <strong>Financiamiento disponible</strong>
+          <p>Consulta nuestras opciones de financiamiento.</p>
+        </div>
+      </div>
+
+      <div class="benefit-item">
+        <ion-icon name="shield-checkmark-outline"></ion-icon>
+        <div>
+          <strong>Garantía incluida</strong>
+          <p>Mayor tranquilidad en tu compra.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="quotation-section">
+      <p>¿Listo para conducir la excelencia?</p>
+
+      <ion-button
+        expand="block"
+        class="quotation-button"
+        (click)="cotizarVehiculo()"
+      >
+        SOLICITAR COTIZACIÓN
+        <ion-icon name="car-sport-outline" slot="end"></ion-icon>
+      </ion-button>
+    </section>
+
+  </main>
 
 </ion-content>
