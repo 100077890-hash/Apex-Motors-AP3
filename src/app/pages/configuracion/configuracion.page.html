@@ -1,0 +1,138 @@
+<ion-header class="settings-header">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/catalogo"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>CONFIGURACIÓN</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="settings-content">
+
+  <main class="settings-wrapper">
+
+    <section class="settings-intro">
+      <p class="eyebrow">APEX MOTORS · PREFERENCIAS</p>
+      <h1>Configuración</h1>
+      <p>Personaliza tu experiencia en nuestra aplicación.</p>
+    </section>
+
+    <section class="settings-section">
+      <p class="section-label">NOTIFICACIONES</p>
+
+      <ion-card class="settings-card">
+        <ion-card-content>
+          <ion-list lines="none">
+
+            <ion-item>
+              <ion-icon
+                name="notifications-outline"
+                slot="start">
+              </ion-icon>
+
+              <ion-label>
+                <h2>Notificaciones</h2>
+                <p>Recibir avisos de la aplicación.</p>
+              </ion-label>
+
+              <ion-toggle
+                slot="end"
+                [(ngModel)]="notificaciones"
+                aria-label="Activar notificaciones">
+              </ion-toggle>
+            </ion-item>
+
+            <ion-item>
+              <ion-icon
+                name="mail-outline"
+                slot="start">
+              </ion-icon>
+
+              <ion-label>
+                <h2>Ofertas por correo</h2>
+                <p>Recibir novedades y promociones.</p>
+              </ion-label>
+
+              <ion-toggle
+                slot="end"
+                [(ngModel)]="ofertasCorreo"
+                aria-label="Activar ofertas por correo">
+              </ion-toggle>
+            </ion-item>
+
+          </ion-list>
+        </ion-card-content>
+      </ion-card>
+    </section>
+
+    <section class="settings-section">
+      <p class="section-label">PRIVACIDAD Y SEGURIDAD</p>
+
+      <ion-card class="settings-card">
+        <ion-card-content>
+          <ion-list lines="none">
+
+            <ion-item>
+              <ion-icon
+                name="shield-checkmark-outline"
+                slot="start">
+              </ion-icon>
+
+              <ion-label>
+                <h2>Protección de cuenta</h2>
+                <p>Mantener activa la protección de tus datos.</p>
+              </ion-label>
+
+              <ion-toggle
+                slot="end"
+                [(ngModel)]="privacidad"
+                aria-label="Activar protección de cuenta">
+              </ion-toggle>
+            </ion-item>
+
+            <ion-item>
+              <ion-icon
+                name="eye-outline"
+                slot="start">
+              </ion-icon>
+
+              <ion-label>
+                <h2>Privacidad</h2>
+                <p>Tu información personal y preferencias.</p>
+              </ion-label>
+            </ion-item>
+
+          </ion-list>
+        </ion-card-content>
+      </ion-card>
+    </section>
+
+    <section class="settings-section">
+      <p class="section-label">INFORMACIÓN</p>
+
+      <ion-card class="settings-card">
+        <ion-card-content>
+          <ion-item lines="none">
+            <ion-icon
+              name="information-circle-outline"
+              slot="start">
+            </ion-icon>
+
+            <ion-label>
+              <h2>Acerca de Apex Motors</h2>
+              <p>Versión 1.0.0</p>
+            </ion-label>
+          </ion-item>
+        </ion-card-content>
+      </ion-card>
+    </section>
+
+    <footer class="settings-footer">
+      APEX MOTORS © 2026
+      <p>ELEGANCIA · POTENCIA · EXCLUSIVIDAD</p>
+    </footer>
+
+  </main>
+
+</ion-content>

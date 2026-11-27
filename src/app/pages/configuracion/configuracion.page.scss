@@ -1,0 +1,123 @@
+.settings-header ion-toolbar {
+  --background: #111111;
+  --color: #ffffff;
+  --border-color: #292929;
+}
+
+.settings-header ion-title {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.settings-header ion-back-button {
+  --color: #e5b94f;
+}
+
+.settings-content {
+  --background: #101010;
+  --color: #ffffff;
+}
+
+.settings-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 24px 18px;
+}
+
+.settings-intro {
+  margin: 10px 0 30px;
+}
+
+.eyebrow,
+.section-label {
+  color: #e5b94f;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+}
+
+.settings-intro h1 {
+  color: #ffffff;
+  font-size: 29px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.settings-intro p:last-child {
+  color: #a5a5a5;
+  font-size: 13px;
+}
+
+.settings-section {
+  margin-bottom: 27px;
+}
+
+.section-label {
+  margin-bottom: 13px;
+}
+
+.settings-card {
+  margin: 0;
+  background: #1b1b1b;
+  border: 1px solid #303030;
+  border-radius: 14px;
+  box-shadow: none;
+}
+
+.settings-card ion-card-content {
+  padding: 8px;
+}
+
+.settings-card ion-list {
+  background: transparent;
+}
+
+.settings-card ion-item {
+  --background: transparent;
+  --color: #ffffff;
+  --border-color: #333333;
+  --padding-start: 10px;
+  --inner-padding-end: 8px;
+  --min-height: 78px;
+}
+
+.settings-card ion-item ion-icon {
+  color: #e5b94f;
+  font-size: 22px;
+  margin-right: 13px;
+}
+
+.settings-card ion-label h2 {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.settings-card ion-label p {
+  color: #999999;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.settings-card ion-toggle {
+  --track-background: #555555;
+  --track-background-checked: #80651f;
+  --handle-background: #ffffff;
+  --handle-background-checked: #e5b94f;
+}
+
+.settings-footer {
+  color: #888888;
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: 1px;
+  padding: 25px 0;
+}
+
+.settings-footer p {
+  color: #e5b94f;
+  font-size: 9px;
+  margin-top: 7px;
+}

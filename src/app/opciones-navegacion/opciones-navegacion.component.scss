@@ -1,0 +1,26 @@
+.navigation-list {
+  background: transparent;
+  padding: 12px;
+}
+
+.navigation-item {
+  --background: #171717;
+  --color: #ffffff;
+  --border-radius: 10px;
+  --padding-start: 14px;
+  --min-height: 52px;
+
+  margin-bottom: 9px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.navigation-item ion-icon {
+  color: #e5b94f;
+  font-size: 22px;
+  margin-right: 12px;
+}
+
+.navigation-item:active {
+  --background: #292929;
+}
